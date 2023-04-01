@@ -436,7 +436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7582eadc03d90854da4ad7549238c934, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beatTempo: 110
+  beatTempo: 113
   hasStarted: 0
 --- !u!1 &139282717
 GameObject:
@@ -667,6 +667,8 @@ MonoBehaviour:
   music: {fileID: 255829530}
   startPlaying: 0
   BS: {fileID: 93841824}
+  currentScore: 0
+  scorePerNote: 100
 --- !u!4 &255829529
 Transform:
   m_ObjectHideFlags: 0
@@ -692,7 +694,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d3b284b13f02fd247a2968f08d43d2e1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ce883e4903ef7154c8d1d5991e2e9992, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

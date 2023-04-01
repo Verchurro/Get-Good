@@ -6,9 +6,14 @@ public class GameManager : MonoBehaviour
 {
 
     public AudioSource music;
+
     public bool startPlaying;
+
     public BeatScroller BS;
+
     public static GameManager instance;
+
+    public int currentScore, scorePerNote = 100;
 
 
     void Start()
@@ -33,6 +38,8 @@ public class GameManager : MonoBehaviour
     public void NoteHit()
     {
         Debug.Log("Hit on Time");
+
+        currentScore += scorePerNote;
     }
 
     public void NoteMissed()
