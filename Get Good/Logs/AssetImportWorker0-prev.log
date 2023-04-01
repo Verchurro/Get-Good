@@ -15,7 +15,7 @@ C:/Users/Keyla/OneDrive/Documents/GitHub/Get-Good/Get Good
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64014
+65194
 Successfully changed project path to: C:/Users/Keyla/OneDrive/Documents/GitHub/Get-Good/Get Good
 C:/Users/Keyla/OneDrive/Documents/GitHub/Get-Good/Get Good
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/Keyla/OneDrive/Documents/GitHub/Get-Good/Get Good
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 75.45 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 78.75 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.9f1 (ad3870b89536)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Resources/UnitySubsystems
@@ -63,79 +63,79 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56408
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56260
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006637 seconds.
+Registered in 0.004978 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 79.82 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 86.81 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.575 seconds
+- Completed reload, in  0.572 seconds
 Domain Reload Profiling:
-	ReloadAssembly (576ms)
-		BeginReloadAssembly (73ms)
+	ReloadAssembly (573ms)
+		BeginReloadAssembly (63ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (402ms)
-			LoadAssemblies (70ms)
+		EndReloadAssembly (415ms)
+			LoadAssemblies (61ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (97ms)
+			SetupTypeCache (84ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (22ms)
-			SetupLoadedEditorAssemblies (240ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (259ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (80ms)
+				RefreshPlugins (87ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (113ms)
-				ProcessInitializeOnLoadMethodAttributes (39ms)
+				ProcessInitializeOnLoadAttributes (124ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.010765 seconds.
+Registered in 0.007881 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Keyla\OneDrive\Documents\GitHub\Get-Good\Get Good\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Keyla\OneDrive\Documents\GitHub\Get-Good\Get Good\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.28 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.57 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.605 seconds
+- Completed reload, in  0.614 seconds
 Domain Reload Profiling:
-	ReloadAssembly (606ms)
-		BeginReloadAssembly (94ms)
+	ReloadAssembly (614ms)
+		BeginReloadAssembly (97ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (409ms)
-			LoadAssemblies (63ms)
+		EndReloadAssembly (402ms)
+			LoadAssemblies (61ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (137ms)
+			SetupTypeCache (129ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (22ms)
-			SetupLoadedEditorAssemblies (164ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (162ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (51ms)
-				ProcessInitializeOnLoadAttributes (80ms)
-				ProcessInitializeOnLoadMethodAttributes (18ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (50ms)
+				ProcessInitializeOnLoadAttributes (81ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
@@ -146,12 +146,12 @@ Failed to load shader (instanceID 9664, GUID 9c442dc870b456e48b615cd8add0e9ef)
 Failed to load shader (instanceID 9666, GUID 603d454d711fe784cba9ce08dd22b881)
 Failed to load shader (instanceID 9668, GUID 0a8f4dcd626bcd14bbbfa5a5e116b16e)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.52 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.31 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 130 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 2 unused Assets / (55.8 KB). Loaded Objects now: 599.
 Memory consumption went from 33.5 MB to 33.4 MB.
-Total: 1.855600 ms (FindLiveObjects: 0.041200 ms CreateObjectMapping: 0.005700 ms MarkObjects: 1.741300 ms  DeleteObjects: 0.066800 ms)
+Total: 2.281800 ms (FindLiveObjects: 0.036100 ms CreateObjectMapping: 0.008500 ms MarkObjects: 2.168000 ms  DeleteObjects: 0.068300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -166,19 +166,37 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 104666.760369 seconds.
-  path: Assets/Core/Scripts
-  artifactKey: Guid(94e14066f062f8e48aa3c617be72c458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Core/Scripts using Guid(94e14066f062f8e48aa3c617be72c458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e70380e5a680f6e2b9e14ab8c2c99cb7') in 0.007491 seconds 
+  Time since last request: 106570.034400 seconds.
+  path: Assets/Core/KEYLA/GET GOOD/Illustration22.png
+  artifactKey: Guid(34bc8f419ab46864caf9364270d3e6ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Core/KEYLA/GET GOOD/Illustration22.png using Guid(34bc8f419ab46864caf9364270d3e6ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fe644cbce32f1301416a48753cdc5cd') in 0.145697 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 70.189173 seconds.
-  path: Assets/Core/KEYLA
-  artifactKey: Guid(a939342fc3d16264cabd3c4a06b8e8cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Core/KEYLA using Guid(a939342fc3d16264cabd3c4a06b8e8cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8d407b897d8a0226ea15f273581599b') in 0.006553 seconds 
+  Time since last request: 0.000015 seconds.
+  path: Assets/Core/KEYLA/GET GOOD/GGG (1).png
+  artifactKey: Guid(186d6202bd9a3814c8a813c6b4fae2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Core/KEYLA/GET GOOD/GGG (1).png using Guid(186d6202bd9a3814c8a813c6b4fae2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f46544cbaa19c0fbc63ca2ac88b4d2d4') in 0.130559 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 34.632362 seconds.
-  path: Assets/Core/KEYLA/GET GOOD
-  artifactKey: Guid(9e036c2d92cfbf74bb3eb6a60179eae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Core/KEYLA/GET GOOD using Guid(9e036c2d92cfbf74bb3eb6a60179eae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df2dd087839563fc764a90fae2294cb5') in 0.007308 seconds 
+  Time since last request: 2.647088 seconds.
+  path: Assets/Core/KEYLA/GET GOOD/get-good-animation.mp4
+  artifactKey: Guid(ddcc8759465a88948b479c5add2b7354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Core/KEYLA/GET GOOD/get-good-animation.mp4 using Guid(ddcc8759465a88948b479c5add2b7354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a775d10b12c1354143e372f87902202a') in 0.036083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.422286 seconds.
+  path: Assets/Core/KEYLA/GET GOOD/Comic (1).png
+  artifactKey: Guid(baca0348aa2137144a33dee7b75b857c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Core/KEYLA/GET GOOD/Comic (1).png using Guid(baca0348aa2137144a33dee7b75b857c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98094aa25298a2766ed98235d77bd2f7') in 0.048348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.383763 seconds.
+  path: Assets/Core/KEYLA/GET GOOD/Clarinette.png
+  artifactKey: Guid(55abd1226b33769408000f45e07ebadb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Core/KEYLA/GET GOOD/Clarinette.png using Guid(55abd1226b33769408000f45e07ebadb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4da2d4978fb5df1d8aacdf826de7aac') in 0.100037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.395757 seconds.
+  path: Assets/Core/KEYLA/GET GOOD/buttons
+  artifactKey: Guid(5b7f7a28e7d9c7e419adcfe737f02e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Core/KEYLA/GET GOOD/buttons using Guid(5b7f7a28e7d9c7e419adcfe737f02e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a05a175798359521827c0d6140a0ed64') in 0.008120 seconds 
