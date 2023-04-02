@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,12 +14,18 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
 
-    public int currentScore, scorePerNote = 100;
+    public int currentScore, scorePerNote = 100, currentMultiplier, multiplierTracker;
+    public int[] multiplierThresholds;
+
+    public Text scoreText, multiText;
 
 
     void Start()
     {
         instance = this;
+
+        scoreText.text = "Score: 0";
+        currentMultiplier = 1; 
     }
 
     void Update()
@@ -39,7 +46,16 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Hit on Time");
 
-        currentScore += scorePerNote;
+        multiplierTracker++;
+
+        if (multiplierThresholds[currentMultiplier - 1] <= multiplierTracker) 
+        {
+            multiplierTracker = 0;
+            currentMultiplier++;
+        }
+
+        currentScore += scorePerNote * currentMultiplier;
+        scoreText.text = "Score: " + currentScore;
     }
 
     public void NoteMissed()
