@@ -8,13 +8,13 @@ public class GameManager : MonoBehaviour
 
     public AudioSource music;
 
-    public bool startPlaying;
+    public bool startPlaying, missed = false, great = false;
 
     public BeatScroller BS;
 
     public static GameManager instance;
 
-    public int currentScore, scorePerNote = 100, currentMultiplier, multiplierTracker;
+    public int currentScore, scorePerNote = 100, currentMultiplier, multiplierTracker, scorePerGoodNote = 125, scorePerPerfectnote = 150;
     public int[] multiplierThresholds;
 
     public Text scoreText, multiText;
@@ -45,21 +45,50 @@ public class GameManager : MonoBehaviour
     public void NoteHit()
     {
         Debug.Log("Hit on Time");
-
+        missed= false;
+        great = true;
         multiplierTracker++;
 
-        if (multiplierThresholds[currentMultiplier - 1] <= multiplierTracker) 
+        if (currentMultiplier - 1 < multiplierThresholds.Length) 
         {
-            multiplierTracker = 0;
-            currentMultiplier++;
+            multiplierTracker++;
+
+            if (multiplierThresholds[currentMultiplier - 1] <= multiplierTracker)
+            {
+                multiplierTracker = 0;
+                currentMultiplier++;
+            }
         }
 
-        currentScore += scorePerNote * currentMultiplier;
+        //currentScore += scorePerNote * currentMultiplier;
         scoreText.text = "Score: " + currentScore;
+    }
+
+    public void NormalHit()
+    {
+        currentScore += scorePerNote * currentMultiplier;
+        NoteHit();
+    }
+
+    public void GoodHit()
+    {
+        currentScore += scorePerGoodNote * currentMultiplier;
+        NoteHit();
+    }
+
+    public void Perfect()
+    {
+        currentScore += scorePerPerfectnote * currentMultiplier;
+        NoteHit();
     }
 
     public void NoteMissed()
     {
         Debug.Log("Missed Note");
+
+        currentMultiplier= 1;
+        multiplierTracker= 0;
+        missed = true;
+        great = false;
     }
 }
